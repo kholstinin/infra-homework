@@ -5,7 +5,9 @@
   "scripts": {
     "test:cjs": "node -r './build/loader.cjs' ./build/test/index.cjs",
     "test:esm": "node --import ./build/register.mjs ./build/test/index.mjs",
-    "test:yarn": "node test/project.js"
+    "test:yarn": "node test/project.js",
+    "test:hook": "node test/hook.js",
+    "test:eslint": "node test/eslint.js"
   },
   "keywords": [],
   "author": "kholstinin.da@gmail.com",
@@ -13,7 +15,12 @@
   "description": "homework tasks for frontend infra course",
   "packageManager": "yarn@4.5.3",
   "dependencies": {
-    "eslint": "^9.16.0",
+    "@types/eslint": "9.6.1",
+    "@types/node": "22.10.1",
+    "@yarnpkg/core": "4.1.6",
+    "eslint": "9.16.0",
+    "webpack": "5.97.1",
+    "webpack-cli": "5.1.4",
     "yaml": "2.6.1"
   }
 }
