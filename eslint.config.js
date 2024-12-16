@@ -5,7 +5,7 @@ export default [
   {
     plugins: { infra },
     rules: {
-      "infra/strict-const": []
+      "infra/strict-const": ["error", [BUILD_VARIABLES]]
     }
   }
 ];
