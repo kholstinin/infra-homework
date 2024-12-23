@@ -1,14 +1,21 @@
-const assert = require('assert');
+const assert = require('node:assert');
 const { exec } = require('node:child_process');
+const packageJSON = require('../package.json');
 
-const actual = {
+const deps = [];
+
+for (const dep in packageJSON.dependencies) {
+  deps.push(`${dep}: ${packageJSON.dependencies[dep]}`)
+}
+
+const expected = {
   name: "infra-homework",
   version: "1.0.0",
   author: "kholstinin.da@gmail.com",
   description: "homework tasks for frontend infra course",
-  dependencies: ["eslint: 9.16.0", "yaml: 2.6.1"]
+  dependencies: deps
 };
 
 exec('yarn project', (_, stdout) => {
-  assert.deepEqual(stdout, JSON.stringify(actual));
+  assert.deepEqual(JSON.parse(stdout), expected);
 });

@@ -1,0 +1,43 @@
+{
+  "stages": [
+    "prepare",
+    "lint",
+    "build",
+    "test",
+    "deploy"
+  ],
+  "prepare": {
+    "cache": {
+      "key": "yarn.lock"
+    },
+    "variables": {
+      "NODE_ENV": "production",
+      "API_TIMEOUT": 1.25,
+      "IS_STAGE": true
+    },
+    "scripts": [
+      "npm i"
+    ]
+  },
+  "lint": {
+    "description": "lint all js files\nwith eslint\n",
+    "scripts": [
+      "npm run eslint"
+    ]
+  },
+  "deploy": {
+    "scripts": [
+      "s3 upload /dist"
+    ],
+    "assets": [
+      {
+        "name": "main",
+        "path": "./dist/main.js"
+      },
+      {
+        "name": "styles",
+        "path": "./dist/styles.css"
+      }
+    ]
+  }
+}

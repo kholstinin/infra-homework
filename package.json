@@ -8,7 +8,9 @@
     "test:esm": "node --import ./build/register.mjs ./build/test/index.mjs",
     "test:yarn": "node test/project.js",
     "test:hook": "node test/hook.js",
-    "test:eslint": "node test/eslint.js"
+    "test:eslint": "node test/eslint.js",
+    "test:yaml": "node test/yaml.js",
+    "test:cdp": "node test/cdp.js"
   },
   "keywords": [],
   "author": "kholstinin.da@gmail.com",
@@ -19,7 +21,9 @@
     "@types/eslint": "9.6.1",
     "@types/node": "22.10.1",
     "@yarnpkg/core": "4.1.6",
+    "chrome-remote-interface": "0.33.2",
     "eslint": "9.16.0",
+    "express": "4.21.2",
     "webpack": "5.97.1",
     "webpack-cli": "5.1.4",
     "yaml": "2.6.1"
