@@ -2,50 +2,50 @@ name: test
 on:
   push:
   workflow_dispatch:
-  
+
 jobs:
-    dependencies:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-node@v4
-          with:
-              node-version: '22.11.0'
-              cache: yarn
-        - run: yarn install
-        
-    build:
-      needs: dependencies
-      runs-on: ubuntu-latest
-      steps:
-          - uses: actions/checkout@v4
-          - uses: actions/setup-node@v4
-            with:
-              node-version: '22.11.0'
-              cache: yarn
-          - run: yarn install
-          - run: yarn run build
-          
-    linters:
-        needs: dependencies
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v4
-          - uses: actions/setup-node@v4
-            with:
-              node-version: '22.11.0'
-              cache: yarn
-          - run: yarn install
-          - run: yarn run linters
-          
-    deploy:
-        needs: linters
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v4
-          - uses: actions/setup-node@v4
-            with:
-              node-version: '22.11.0'
-              cache: yarn
-          - run: yarn install
-          - run: yarn run deploy
+  dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.11.0'
+          cache: yarn
+      - run: yarn install
+
+  build:
+    needs: dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.11.0'
+          cache: yarn
+      - run: yarn install
+      - run: yarn run build
+
+  linters:
+    needs: dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.11.0'
+          cache: yarn
+      - run: yarn install
+      - run: yarn run linters
+
+  deploy:
+    needs: [dependencies, build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.11.0'
+          cache: yarn
+      - run: yarn install
+      - run: yarn run deploy
