@@ -5,8 +5,12 @@ jobs:
         name: dependincies
         runs-on: ubuntu-latest
         steps:
-            - name: log
-              run: echo ls
+            - name: Checkout repository
+              uses: actions/checkout@v4
+            - name: Print folder content
+              run: |
+                  echo "Listing content of the repository root:"
+                  ls -la
             - name: install dependencies
               run: yarn install
             - name: log
