@@ -23,7 +23,7 @@ jobs:
             - name: install dependencies
               run: yarn install
             - name: log
-              run: echo ls
+              run: ls
             - name: build
               run: yarn run build
     linters:
