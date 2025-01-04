@@ -5,38 +5,31 @@ jobs:
       name: dependincies
       runs-on: ubuntu-latest
       steps:
-        - name: Checkout repository
-          uses: actions/checkout@v4
-        - name: install dependencies
-          run: yarn install
+        - uses: actions/checkout@v4
+        - run: yarn install
     build:
       name: build
       runs-on: ubuntu-latest
       needs: dependencies
       steps:
-          - name: Checkout repository
-            uses: actions/checkout@v4
+          - uses: actions/checkout@v4
           - uses: actions/setup-node@v4
             with:
               node-version: 22.11.0
               cache: 'yarn'
-          - name: install dependencies
-            run: yarn install
-          - name: log
-            run: ls
-          - name: build
-            run: yarn run build
-          - name: log
-            run: ls
+          - run: yarn install
+          - run: yarn run build
     linters:
         name: lint
         runs-on: ubuntu-latest
         needs: dependencies
         steps:
-          - name: Checkout repository
-            uses: actions/checkout@v4
-          - name: lint
-            run: yarn run linters
+          - uses: actions/checkout@v4
+          - uses: actions/setup-node@v4
+            with:
+              node-version: 22.11.0
+              cache: 'yarn'
+          - run: yarn run linters
     deploy:
         name: deploy
         runs-on: ubuntu-latest
