@@ -5,13 +5,19 @@ jobs:
         name: dependincies
         runs-on: ubuntu-latest
         steps:
+            - name: log
+              run: echo ls
             - name: install dependencies
               run: yarn install
+            - name: log
+              run: echo ls
     build:
         name: build
         runs-on: ubuntu-latest
         needs: dependencies
-        steps:
+        steps:        
+            - name: install dependencies
+              run: yarn install
             - name: log
               run: echo ls
             - name: build
