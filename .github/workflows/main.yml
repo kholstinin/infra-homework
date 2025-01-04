@@ -1,8 +1,8 @@
 name: test
-on: push
+on:
+  push
 jobs:
     dependencies:
-      name: dependincies
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v4
@@ -11,22 +11,10 @@ jobs:
               node-version: 22.11.0
               cache: 'yarn'
         - run: yarn install
-    linters:
-        name: lint
-        runs-on: ubuntu-latest
-        needs: dependencies
-        steps:
-          - uses: actions/checkout@v4
-          - uses: actions/setup-node@v4
-            with:
-              node-version: 22.11.0
-              cache: 'yarn'
-          - run: yarn install
-          - run: yarn run linters
+        
     build:
-      name: build
-      runs-on: ubuntu-latest
       needs: dependencies
+      runs-on: ubuntu-latest
       steps:
           - uses: actions/checkout@v4
           - uses: actions/setup-node@v4
@@ -35,10 +23,22 @@ jobs:
               cache: 'yarn'
           - run: yarn install
           - run: yarn run build
-    deploy:
-        name: deploy
+          
+    linters:
+        needs: dependencies
         runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v4
+          - uses: actions/setup-node@v4
+            with:
+              node-version: 22.11.0
+              cache: 'yarn'
+          - run: yarn install
+          - run: yarn run linters
+          
+    deploy:
         needs: linters
+        runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@v4
           - uses: actions/setup-node@v4
