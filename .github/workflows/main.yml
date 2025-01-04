@@ -1,6 +1,8 @@
 name: test
 on:
-  push
+  push:
+  workflow_dispatch:
+  
 jobs:
     dependencies:
       runs-on: ubuntu-latest
