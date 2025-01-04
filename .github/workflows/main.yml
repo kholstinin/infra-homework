@@ -7,25 +7,23 @@ jobs:
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
-            - name: Print folder content
-              run: |
-                  echo "Listing content of the repository root:"
-                  ls -la
             - name: install dependencies
               run: yarn install
-            - name: log
-              run: ls
     build:
         name: build
         runs-on: ubuntu-latest
         needs: dependencies
-        steps:        
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
             - name: install dependencies
               run: yarn install
             - name: log
               run: ls
             - name: build
               run: yarn run build
+            - name: log
+              run: ls
     linters:
         name: lint
         runs-on: ubuntu-latest
