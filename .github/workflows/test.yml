@@ -8,6 +8,7 @@ jobs:
   dependencies:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: dependencies install
         run: yarn install
   build:
@@ -22,3 +23,8 @@ jobs:
     steps:
       - name: dependencies install
         run: npm run deploy
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+  
