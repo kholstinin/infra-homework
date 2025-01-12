@@ -12,11 +12,13 @@ jobs:
         run: yarn install
   build:
     runs-on: ubuntu-latest
+    needs: dependencies
     steps:
       - name: dependencies install
         run: npm run build
   deploy:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: dependencies install
         run: npm run deploy
