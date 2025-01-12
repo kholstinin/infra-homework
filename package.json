@@ -9,7 +9,12 @@
     "test:hook": "node test/hook.js",
     "test:eslint": "node test/eslint.js",
     "test:yaml": "node test/yaml.js",
-    "test:cdp": "node test/cdp.js"
+    "test:github": "node test/github.js",
+    "test:gitlab": "node test/gitlab.js",
+    "test:cdp": "node test/cdp.js",
+    "build": "webpack --mode=development && echo 'Build completed'",
+    "linters": "eslint ./src && echo 'Linters completed'",
+    "deploy": "echo deploy && echo 'Deploy completed'"
   },
   "keywords": [],
   "author": "kholstinin.da@gmail.com",
