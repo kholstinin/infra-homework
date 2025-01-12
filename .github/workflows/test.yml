@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: dependencies
     steps:
+      - uses: actions/checkout@v4
       - name: dependencies install
         run: npm run build
   deploy:
