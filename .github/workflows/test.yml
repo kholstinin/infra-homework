@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: dependencies install
-        run: npm i
+        run: yarn install
