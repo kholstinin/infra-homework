@@ -19,6 +19,12 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - name: dependencies install
         run: yarn install
+      - name: Save the cache after installing dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        uses: actions/cache@v3
+        with:
+          path: ./node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         
   linters:
     runs-on: ubuntu-latest
