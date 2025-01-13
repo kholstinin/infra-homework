@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
-      - name: build
+      - name: linters
         run: yarn run linters
   build:
     runs-on: ubuntu-latest
