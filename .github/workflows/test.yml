@@ -19,6 +19,20 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - name: dependencies install
         run: yarn install
+  linters:
+    runs-on: ubuntu-latest
+    needs: dependencies
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.11.0'
+          cache: yarn
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn install
+      - name: build
+        run: yarn run linters
   build:
     runs-on: ubuntu-latest
     needs: dependencies
@@ -42,7 +56,8 @@ jobs:
         with:
           node-version: '22.11.0'
           cache: yarn
-      - run: yarn install
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
       - name: deploy
         run: yarn run deploy
 
