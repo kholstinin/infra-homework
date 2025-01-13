@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: '22.11.0'
           cache: yarn
+      - run: yarn install
       - name: build
         run: yarn run build
   deploy:
