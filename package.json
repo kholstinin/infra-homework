@@ -14,6 +14,7 @@
     "test:docker": "node test/docker.js",
     "test:kuber": "node test/kuber.js",
     "test:cdp": "node test/cdp.js",
+    "test:prom": "node test/prom.js",
     "test:deploy": "node test/deploy.js",
     "build": "webpack --mode=development && echo 'Build completed'",
     "linters": "eslint ./src && echo 'Linters completed'",
@@ -32,6 +33,8 @@
     "chrome-remote-interface": "0.33.2",
     "eslint": "9.16.0",
     "express": "4.21.2",
+    "nodemon": "^3.1.9",
+    "prom-client": "^15.1.3",
     "webpack": "5.97.1",
     "webpack-cli": "5.1.4",
     "yaml": "2.6.1"
