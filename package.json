@@ -16,6 +16,7 @@
     "test:cdp": "node test/cdp.js",
     "test:prom": "node test/prom.js",
     "test:deploy": "node test/deploy.js",
+    "test:reverse": "node test/reverse.js",
     "build": "webpack --mode=development && echo 'Build completed'",
     "linters": "eslint ./src && echo 'Linters completed'",
     "deploy": "echo deploy && echo 'Deploy completed'"

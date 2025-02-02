@@ -1,4 +1,4 @@
-# Docker container
+# Kubernetes
 
 С помощью minikube разверните у себя локально кластер кубернетеса, а внутри запустите [контейнер](https://hub.docker.com/r/kholstinevich/server).
 
