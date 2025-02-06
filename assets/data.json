@@ -1,0 +1,272 @@
+[
+  {
+    "_id": "67a52701627decdeb211f18f",
+    "index": 0,
+    "guid": "0e473075-f3a1-4907-aa8b-b94d5c01b763",
+    "isActive": true,
+    "balance": "$3,650.49",
+    "picture": "http://placehold.it/32x32",
+    "age": 22,
+    "eyeColor": "blue",
+    "name": "Tiffany Mcclure",
+    "gender": "female",
+    "company": "VERTON",
+    "email": "tiffanymcclure@verton.com",
+    "phone": "+1 (895) 583-3049",
+    "address": "330 Oxford Walk, Westerville, Alabama, 7198",
+    "about": "Irure ad incididunt occaecat non magna in excepteur. Aliqua pariatur tempor eu consequat tempor dolor. Non cupidatat officia consectetur duis elit aliqua id sit qui qui in labore. Adipisicing tempor cupidatat officia in officia exercitation est Lorem in eiusmod. Commodo deserunt adipisicing quis commodo veniam laborum esse cillum laborum. Qui ad ut nostrud incididunt esse dolore irure consectetur. Aliquip tempor dolore fugiat laboris laboris.\r\n",
+    "registered": "2020-01-21T06:39:15 -05:00",
+    "latitude": -80.236845,
+    "longitude": 172.727759,
+    "tags": [
+      "consectetur",
+      "fugiat",
+      "in",
+      "cillum",
+      "reprehenderit",
+      "culpa",
+      "adipisicing"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "York Leonard"
+      },
+      {
+        "id": 1,
+        "name": "Shelton Barlow"
+      },
+      {
+        "id": 2,
+        "name": "Corine Johns"
+      }
+    ],
+    "greeting": "Hello, Tiffany Mcclure! You have 6 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "67a527010a6fd86067e83baa",
+    "index": 1,
+    "guid": "efbf86a6-0f5d-4ca4-a979-a1fd042ac509",
+    "isActive": true,
+    "balance": "$2,497.10",
+    "picture": "http://placehold.it/32x32",
+    "age": 30,
+    "eyeColor": "blue",
+    "name": "Pickett Cox",
+    "gender": "male",
+    "company": "HELIXO",
+    "email": "pickettcox@helixo.com",
+    "phone": "+1 (905) 485-2472",
+    "address": "460 Mill Avenue, Brambleton, Michigan, 5892",
+    "about": "Consequat commodo Lorem reprehenderit veniam velit labore Lorem. Commodo id nulla et reprehenderit. Et adipisicing dolore elit adipisicing non exercitation fugiat commodo qui Lorem. Eu quis cupidatat deserunt veniam ullamco veniam anim est velit ullamco reprehenderit. Cillum et culpa reprehenderit eiusmod ullamco ea in id esse sit elit. Deserunt magna officia quis nulla magna.\r\n",
+    "registered": "2023-10-10T06:01:47 -05:00",
+    "latitude": -29.027745,
+    "longitude": -79.289836,
+    "tags": [
+      "sint",
+      "dolore",
+      "occaecat",
+      "nulla",
+      "labore",
+      "ea",
+      "id"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Jami Hendrix"
+      },
+      {
+        "id": 1,
+        "name": "Flora Moore"
+      },
+      {
+        "id": 2,
+        "name": "Felecia Mcclain"
+      }
+    ],
+    "greeting": "Hello, Pickett Cox! You have 10 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "67a5270143b74aff7d232c02",
+    "index": 2,
+    "guid": "aa2018e4-4aac-401d-ad69-afdff50c7275",
+    "isActive": true,
+    "balance": "$1,342.78",
+    "picture": "http://placehold.it/32x32",
+    "age": 25,
+    "eyeColor": "green",
+    "name": "Ora Mcgowan",
+    "gender": "female",
+    "company": "BRISTO",
+    "email": "oramcgowan@bristo.com",
+    "phone": "+1 (960) 511-3908",
+    "address": "612 Juliana Place, Taft, New York, 8533",
+    "about": "Proident duis cillum cillum ut enim. Sit labore mollit ipsum eu. Culpa laborum adipisicing in deserunt est.\r\n",
+    "registered": "2025-01-03T10:53:27 -05:00",
+    "latitude": -64.012298,
+    "longitude": -2.681881,
+    "tags": [
+      "incididunt",
+      "nostrud",
+      "culpa",
+      "quis",
+      "pariatur",
+      "ad",
+      "deserunt"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Stanley Lambert"
+      },
+      {
+        "id": 1,
+        "name": "Ball Blackwell"
+      },
+      {
+        "id": 2,
+        "name": "Katelyn King"
+      }
+    ],
+    "greeting": "Hello, Ora Mcgowan! You have 3 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "67a52701a0a7c133846c1416",
+    "index": 3,
+    "guid": "ce33cedd-f008-4af7-a3d7-f115ae0feaa8",
+    "isActive": true,
+    "balance": "$2,126.59",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "brown",
+    "name": "Palmer Meadows",
+    "gender": "male",
+    "company": "BEADZZA",
+    "email": "palmermeadows@beadzza.com",
+    "phone": "+1 (972) 557-3922",
+    "address": "701 Stryker Court, Richmond, American Samoa, 7565",
+    "about": "In dolor nulla incididunt exercitation velit laborum sunt sunt labore quis duis enim fugiat. Exercitation consequat anim ullamco sint do voluptate exercitation commodo et consequat laborum. Nulla eiusmod fugiat duis sint exercitation Lorem est qui nulla.\r\n",
+    "registered": "2023-06-11T08:00:28 -05:00",
+    "latitude": -87.970269,
+    "longitude": 97.877975,
+    "tags": [
+      "enim",
+      "ex",
+      "tempor",
+      "mollit",
+      "qui",
+      "labore",
+      "mollit"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Johanna Forbes"
+      },
+      {
+        "id": 1,
+        "name": "Wong Blake"
+      },
+      {
+        "id": 2,
+        "name": "Kimberly Mckay"
+      }
+    ],
+    "greeting": "Hello, Palmer Meadows! You have 4 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "67a52701dd50c0c84089c7a0",
+    "index": 4,
+    "guid": "b8a5a6c2-e789-456c-93f7-dc86ea0949c7",
+    "isActive": false,
+    "balance": "$2,853.75",
+    "picture": "http://placehold.it/32x32",
+    "age": 32,
+    "eyeColor": "green",
+    "name": "Dale Battle",
+    "gender": "male",
+    "company": "TINGLES",
+    "email": "dalebattle@tingles.com",
+    "phone": "+1 (810) 476-3045",
+    "address": "694 Just Court, Riegelwood, California, 3552",
+    "about": "Incididunt aliquip amet aute aliqua deserunt cupidatat officia sint duis laboris. Mollit sit exercitation sit officia in elit sint anim esse tempor adipisicing. Ex reprehenderit fugiat cupidatat sunt laboris. Commodo culpa enim ipsum voluptate esse nisi laboris cillum excepteur ad adipisicing. Duis deserunt esse minim voluptate aute adipisicing eiusmod excepteur esse dolor.\r\n",
+    "registered": "2024-05-05T07:05:54 -05:00",
+    "latitude": -62.588178,
+    "longitude": -103.702999,
+    "tags": [
+      "laboris",
+      "nisi",
+      "pariatur",
+      "dolor",
+      "aute",
+      "sit",
+      "amet"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Obrien Rasmussen"
+      },
+      {
+        "id": 1,
+        "name": "Angeline Clayton"
+      },
+      {
+        "id": 2,
+        "name": "Kaitlin Lawson"
+      }
+    ],
+    "greeting": "Hello, Dale Battle! You have 9 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "67a52701bccc33bb63d6ddc2",
+    "index": 5,
+    "guid": "3de3232f-1a2e-4646-969d-b3b51af69530",
+    "isActive": false,
+    "balance": "$2,311.24",
+    "picture": "http://placehold.it/32x32",
+    "age": 35,
+    "eyeColor": "blue",
+    "name": "Paula Oneal",
+    "gender": "female",
+    "company": "ISOLOGICS",
+    "email": "paulaoneal@isologics.com",
+    "phone": "+1 (979) 414-3427",
+    "address": "975 Ryerson Street, Brogan, Idaho, 9194",
+    "about": "Qui anim do tempor est laboris Lorem elit exercitation officia adipisicing dolor. Cillum cupidatat voluptate pariatur ex commodo ad in. Minim dolor ipsum nisi eu consequat tempor et irure aute ipsum magna cillum excepteur esse. Ipsum aliqua ea enim pariatur qui reprehenderit sunt laborum veniam dolore tempor nisi magna. Officia ad tempor esse exercitation veniam et nostrud id et cupidatat deserunt elit. Adipisicing ex ex cillum consequat sint ex labore sit enim dolore officia est quis. Nisi nisi eu commodo officia.\r\n",
+    "registered": "2021-08-14T05:37:44 -05:00",
+    "latitude": 26.220456,
+    "longitude": 119.351987,
+    "tags": [
+      "aliquip",
+      "occaecat",
+      "voluptate",
+      "sunt",
+      "cillum",
+      "id",
+      "voluptate"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Cannon Parks"
+      },
+      {
+        "id": 1,
+        "name": "Dyer Harmon"
+      },
+      {
+        "id": 2,
+        "name": "Jillian Mcfadden"
+      }
+    ],
+    "greeting": "Hello, Paula Oneal! You have 2 unread messages.",
+    "favoriteFruit": "banana"
+  }
+]
